@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- title and icon -->
+    <title>Projects</title>
+    <link rel="icon" href="../global/images/project-icon.png">
+
+    <!-- meta data  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../global/headerStyle.css">
+    <link rel="stylesheet" href="../global/footerStyle.css">
+
+    <!-- javascript code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../global/scrollBar.js"></script>
+    <script src="projects.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="menu">
+
+        <input id="menu__toggle" type="checkbox" class='menu__toggle' />
+        <label for="menu__toggle" class="menu__toggle-label">
+            <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+            </svg>
+            <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                <path
+                    d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+            </svg>
+        </label>
+
+        <ol class='menu__content'>
+            <li class="menu-item"><a href="../home/home.php">Home</a></li>
+            <li class="menu-item"><a href="../about/about.html">About</a></li>
+            <li class="menu-item"><a class="active" href="../projects/projects.html">Projects</a></li>
+            <li class="menu-item"><a href="../feedbacks/feedbacks.php">Feedbacks</a></li>
+            <li class="menu-item"><a href="../contact/contact.php">Contact</a></li>
+        </ol>
+
+    </nav>
+
+    <!-- Fixed Header  with scroll progress bar -->
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <h2>Projects</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <div class="content">
+        <h1 class="heading">Project Gallery</h1>
+        <p class="description">Hover over a project to flip it.</p>
+
+        <!-- snmpv3 -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-snmp.png');">
+                <p>SNMPv3</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla,Yash Jain,Mohit Gupta,Rahul Bharadwaj
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        Simple Network Management Protocol implemented in VHDL.
+                    </p>
+                    <button class="button" onclick="navigateToUrl('https://github.com/Manas-Shukla/Snmp')">Source Code</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- dynamic form renderer -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-angular.png');">
+                <p>Dynamic Form Renderer</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        Render Dynamic Form based on Definition in form of JSON data.
+                    </p>
+                    <button class="button" onclick="navigateToUrl('https://github.com/Manas-Shukla/Dynamic-Form-Renderer')">Source Code</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- spc -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-spc.jpg');">
+                <p>Secure Personal Cloud</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla,Mohit Gupta,Ritik Roongta
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        A Cloud Storage service that keeps user data fully secured with encryption.
+                    </p>
+                    <button class="button" onclick="navigateToUrl('https://github.com/Manas-Shukla/Secure-Personal-Cloud')">Source Code</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2048 -->
+        <div class="card">
+            <div class="front" style="background-image: url(../global/images/project-2048.jpeg);">
+                <p>2048 Game</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        2048 Game impletemtation in ES6 Javascript.
+                    </p>
+                    <button class="button" onclick="navigateToUrl('https://github.com/Manas-Shukla/2048_Game')">Source Code</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- othello -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-othello.png');">
+                <p>Othello Game</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla,Mohit Gupta
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        Othello Artificial Intelligent game implementation in Racket.
+                    </p>
+                    <button class="button" onclick="navigateToUrl('https://github.com/Manas-Shukla/Othello')">Source Code</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- drmath -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-Drmath.jpg');">
+                <p>Dr Math</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla,Mohit Gupta
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        Symbolic Computation Library Designed in Racket.
+                    </p>
+                    <button class="button" onclick="navigateToUrl('https://github.com/Manas-Shukla/Dr-Math')">Source Code</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- snakebot -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-snake-bot.jpg');">
+                <p>Snake Bot</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla,Aman Kansal,Raajdeep Yadav,Rohan Bansal
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        Autonomous Snake Bot made using arduino programming and Servos.
+                    </p>
+                    <button type="button" class="button video-btn" data-toggle="modal"
+                        data-src="https://www.youtube.com/embed/iB6GeReXNPA" data-target="#myModal">
+                        Demo Video
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- xlra8 -->
+        <div class="card">
+            <div class="front" style="background-image: url('../global/images/project-Xlra8.jpg');">
+                <p>XLRA8</p>
+            </div>
+            <div class="back">
+                <div>
+                    <p>
+                        <strong>Contributers<br></strong>Manas Shukla,Kalpit Veerwal
+                    </p>
+                    <hr>
+                    <p><strong>Description<br></strong>
+                        Wireless Car Bot made using basic motors and transistor circuits.    
+                    </p>
+                    <button class="button" onclick="navigateToUrl('')">Demo Video</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- modal for video -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hints Footer -->
+    <div class="item-hints">
+        <div class="hint" data-position="4">
+            <!-- is-hint -->
+            <span class="hint-radius"></span>
+            <span class="hint-dot"></span>
+            <div class="hint-content do--split-children">
+                <p>
+                    You can contact me <br>to know more about <br>these projects in<br> the contact page
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+
+</html>

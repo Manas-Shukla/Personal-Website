@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  bottom: 0;
+  align-items: center;
+  background: black;
+  background-image: url('../global/images/about-me-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+/* vertical text */
+
+.vertical_text {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  color: black;
+  margin-top: 5%;
+  font-weight: bold
+}
+
+/* about_me */
+
+.about_card {
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+}
+
+#header_about {
+  background: yellowgreen;
+  color: antiquewhite;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+#footer_all {
+  color: gray
+}
+
+#details_about span {
+  color: orange
+}
+
+#details_about a {
+  color: red;
+  text-decoration: none;
+}
+
+#details_about a:hover {
+  text-decoration: underline;
+}
+
+#details_about a:visited {
+  color: purple;
+}
+
+#title_about {
+  font-weight: bold;
+  margin-top: 2%;
+  background: yellow
+}
+
+/* skills card */
+
+.skill_card {
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+}
+
+#title_skill {
+  font-weight: bold;
+  margin-top: 2%;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* profile card */
+
+.badgescard, .firstinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+  animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+
+.profile_card {
+  width: 80%;
+  min-height: 100px;
+  padding: 20px;
+  margin-left: 10%;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile_card:after {
+  content: '';
+  display: block;
+  width: 190px;
+  height: 300px;
+  background: cadetblue;
+  position: absolute;
+  animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+}
+
+.badgescard {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #ECECEC;
+  width: 80%;
+  margin-left: 10%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: -1;
+  left: 10px;
+  bottom: 10px;
+  animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+
+.badgescard span {
+  font-size: 1.6em;
+  margin: 0px 6px;
+  opacity: 0.6;
+}
+
+.firstinfo {
+  flex-direction: row;
+  z-index: 2;
+  position: relative;
+}
+
+.firstinfo img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.firstinfo .profileinfo {
+  padding: 0px 20px;
+}
+
+.firstinfo .profileinfo h1 {
+  font-size: 1.8em;
+}
+
+.firstinfo .profileinfo h3 {
+  font-size: 1.2em;
+  color: #009688;
+  font-style: italic;
+}
+
+.firstinfo .profileinfo p.bio {
+  padding: 10px 0px;
+  color: #5A5A5A;
+  line-height: 1.2;
+  font-style: initial;
+}
+
+@keyframes animatop {
+  0% {
+    opacity: 0;
+    bottom: -500px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@keyframes animainfos {
+  0% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: -42px;
+  }
+}
+
+@keyframes rotatemagic {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    top: -24px;
+    left: -253px;
+  }
+  100% {
+    transform: rotate(-30deg);
+    top: -24px;
+    left: -78px;
+  }
+}
+
+/* blockquote styling */
+
+blockquote {
+  border-left: none
+}
+
+.quote-box {
+  overflow: hidden;
+  margin-top: -10%;
+  padding-top: -5%;
+  border-radius: 17px;
+  background-color: #4ADFCC;
+  margin-top: 3%;
+  color: white;
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+
+.quotation-mark {
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote-text {
+  font-size: 19px;
+  margin-top: -65px;
+}
+
+/* copied css list card */
+
+.cards-list {
+  z-index: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card_li {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card_li .card_li_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card_li .card_li_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card_li:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+  .cards-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+.hobies_card {
+  box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 white;
+  width: 80%;
+  margin-left: 10%;
+  background-color: white;
+}
+
+#title_hobies {
+  font-weight: bold;
+  height: 20%;
+  margin-top: 2%;
+  background: orange;
+  margin-left: 20%;
+  margin-right: 10%;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- title and icon -->
+    <title>About</title>
+    <link rel="icon"
+        href="../global/images/about-icon.png">
+
+    <!-- meta data  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../global/headerStyle.css">
+    <link rel="stylesheet" href="../global/footerStyle.css">
+
+
+    <!-- javascript code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="about.js"></script>
+    <script src="../global/scrollBar.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="menu">
+
+        <input id="menu__toggle" type="checkbox" class='menu__toggle' />
+        <label for="menu__toggle" class="menu__toggle-label">
+            <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+            </svg>
+            <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                <path
+                    d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+            </svg>
+        </label>
+
+        <ol class='menu__content'>
+            <li class="menu-item"><a href="../home/home.php">Home</a></li>
+            <li class="menu-item"><a class="active" href="../about/about.html">About</a></li>
+            <li class="menu-item"><a href="../projects/projects.html">Projects</a></li>
+            <li class="menu-item"><a href="../feedbacks/feedbacks.php">Feedbacks</a></li>
+            <li class="menu-item"><a href="../contact/contact.php">Contact</a></li>
+        </ol>
+
+    </nav>
+
+    <!-- Fixed Header  with scroll progress bar -->
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <h2>About</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+    
+    <div class="container">
+
+        <!-- card view one  -->
+        <!-- profile card -->
+        <div class="content">
+            <div class="profile_card">
+                <div class="firstinfo"><img src="../global/images/about-me.jpg" />
+                    <div class="profileinfo">
+                        <h1>Manas Shukla</h1>
+                        <h3>CSE</h3>
+                        <p class="bio"><i> "Take Every Chance Drop Every Fear"</i> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="badgescard"> <span class="devicons devicons-django"></span><span
+                    class="devicons devicons-python">
+                </span><span class="devicons devicons-codepen"></span><span
+                    class="devicons devicons-javascript_badge"></span><span class="devicons devicons-gulp"></span><span
+                    class="devicons devicons-angular"></span><span class="devicons devicons-sass"> </span>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- card view two  -->
+        <!-- about_me card -->
+        <div class="content">
+            <div class="card about_card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-block px-2">
+                            <h3 class="card-title" id="title_about">
+                                About Me
+                            </h3>
+                            <br>
+                            <div class="card-text container">
+                                <div class="row">
+                                    <div id="details_about">
+                                        <span>Name</span> &nbsp: Manas Shukla<br>
+                                        <span>Email</span> &nbsp: <a href="#">manasshukla@cse.iitb.ac.in</a><br>
+                                        <span>DOB</span> &nbsp : 3-Feb-2000 <br>
+                                        <span>Nationality</span> : Indian
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-block px-2">
+                            <h3 class="card-title" id="header_about">
+                                Short Introduction
+                            </h3>
+
+                            <div class="card-text">
+
+
+                                <h5>
+                                    I am a third year Computer Science Undergraduate<br> at IIT Bombay.
+                                </h5>
+                                <hr>
+                                <p id='footer_all'>
+                                    <i>"Toughest Job : Describe Yourself"</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- card view three -->
+        <!-- skills card -->
+        <div class="content">
+            <div class="card skill_card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-block px-2">
+                            <div class="card-text">
+                                <blockquote class="quote-box">
+                                    <p class="quotation-mark">
+                                        “
+                                    </p>
+                                    <p class="quote-text">
+                                        The Interaction of knowledge and skills with experience is key to learning.
+                                    </p>
+                                    <hr>
+                                    <div class="blog-post-actions">
+                                        <p class="blog-post-bottom pull-left" style="margin-left: 60%">
+                                            John Dewey
+                                        </p>
+                                    </div>
+                                </blockquote>
+                                <hr>
+                                <p id='footer_all'>
+                                    <i>"Once you stop learning, you start dying"</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-block px-2">
+                            <h3 class="card-title" id="title_skill">
+                                Skills
+                            </h3>
+                            <br>
+                            <br>
+                            <div class="card-text container">
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-red" style="width:70%">Angluar</div>
+                                </div>
+                                <br>
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-green" style="width:50%">Django</div>
+                                </div>
+                                <br>
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-blue" style="width:90%">C++</div>
+                                </div>
+                                <br>
+                                <div class="w3-light-grey">
+                                    <div class="w3-container w3-yellow" style="width:90%">VHDL</div>
+                                </div>
+                                <hr>
+                                <a href="" class="card-link" target="blank">Resume</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- card view four -->
+        <!-- hobies card list -->
+        <div class="content">
+            <div class="card hobies_card">
+                <h3 class="card-title" id="title_hobies">
+                    Hobbies
+                </h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card_li">
+                            <div class="card_li_image"> <img
+                                    src="http://cdn.shopify.com/s/files/1/1246/4935/products/Mens-Magna-Red-Cricket-Ball_grande.jpg?v=1479221735" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_li">
+                            <div class="card_li_image"> <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREP-FdIxdGvmWLQXPkBFeIputV802hjun909oC_q2dtsBuWv87" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_li">
+                            <div class="card_li_image"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/I/912FtN%2BFslL.png" /> </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <!-- Hints Footer -->
+    <div class="item-hints">
+        <div class="hint" data-position="4">
+            <!-- is-hint -->
+            <span class="hint-radius"></span>
+            <span class="hint-dot"></span>
+            <div class="hint-content do--split-children">
+                <p>What About Me ?</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>
