@@ -162,3 +162,20 @@ body .wrapper .speechbubble .username:before {
   /* Safari 3-8 */
   transform: scale(1.1);
 }
+
+#searchbox {
+  width: 8%;
+  position: fixed;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  outline: none;
+  margin-top:3%;
+  margin-left: 5%
+}
+.btn-wrapper {
+  text-align : center;
+  
+}

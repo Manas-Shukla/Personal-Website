@@ -79,12 +79,15 @@
         </div>
     </div>
 
-    <br><br>
+    <br><br><br>
+    <!-- search input -->
+    <input id="searchbox"type="text" oninput="onSearch(this.value)" value="" placeholder="Search . . ." name="search">
+    <!-- feedback list -->
     <div class='wrapper' id="root_wrapper">
-        <h1 class='text-center'>
+        <!-- <h1 class='text-center'>
             Top Reviews
         </h1>
-        
+         -->
         <!-- <div class='speechbubble'>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -99,7 +102,12 @@
         </div> -->
         
     </div>
-
+    <!-- pagination -->
+    <div class="btn-wrapper">
+        <button class="btn btn-link" onclick="prev()">&lt;&lt; prev</button>
+        <button class="btn btn-link" onclick="next()">next &gt;&gt;</button>
+        <br>
+    </div>
     <!-- feedback button -->
     <img 
         type="image" 
